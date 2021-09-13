@@ -1,0 +1,373 @@
+/* geral */
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+* {
+	box-sizing: border-box;
+} 
+/* menu */
+header{
+  width: 100%;
+  background: #252525;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+header nav{
+  text-align: right;
+  margin: 30px 0 0 0;
+}
+
+header nav ul li{
+  display: inline;
+}
+
+header nav a{
+  font-size: 18px;
+  color: #fff;
+  padding-left: 18px;
+}
+
+header .menu_logo{
+  display: block;
+  padding: 20px 0 19px 0;
+}
+
+@media only screen and (max-width: 739px){
+  header{
+    position: static;
+  }
+
+  header .menu_logo{
+    text-align: center;
+  }
+
+  header nav{
+    text-align: center;
+    margin: 0;
+  }
+
+  header nav a{
+    padding: 0 4px;
+  }
+}
+
+/* introdução */
+main{
+  padding-top: 138px;
+  width: 100%;
+  background:url("../img/bg-intro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .introducao h1{
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main .introducao h1::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+  margin: 10px auto 10px auto;
+}
+
+main .introducao p{
+  font-size: 18px;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 185px;
+}
+
+@media only screen and (max-width:739px){
+  main .introducao h1{
+    font-size: 2em;
+  }
+
+  main{
+    padding: 60px;
+  }
+
+  main .introducao p{
+    padding-bottom: 10px;
+  }
+} 
+
+/* sobre */
+.sobre .container .descricao_img1{
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+  background: #252525;
+  top: -20px;
+  width: 220px;
+  /* padding: 2px 0; */
+  text-align: center;
+}
+
+.sobre .container .descricao_img2{
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+  background: #252525;
+  top: -20px;
+  width: 220px;
+  /* padding: 3px 0; */
+  text-align: center;
+}
+
+.sobre h2{
+  font-size: 36px;
+  font-weight: bold;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.sobre img{
+  width: 100%;
+  /* padding-bottom: 68px;  */
+  display: block;
+}
+
+.sobre .container .texto_sobre p{
+  font-size: 18px;
+  font-style: italic;
+  max-width: 460px;
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+  padding-bottom: 70px;
+}
+
+@media only screen and (max-width: 739px) {
+  .sobre .img-sobre{
+    padding: 0 0 05px 0;
+  }
+
+  .sobre h2{
+    padding-bottom: 30px;
+  }
+
+  .sobre .container .texto_sobre p{
+    text-align: left;
+  }
+}
+
+
+/* produto */
+.produto{
+  width: 100%;
+  background: #e7e4d8;
+  border: solid #d6d3c8;
+}
+
+.produto h3{
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.produto p{
+  font-size: 14px;
+  padding-bottom: 73px;
+}
+
+.produto-paulista h3::before{
+  color: #492901;
+}
+
+.produto-carioca h3::before{
+  color: #c17139;
+}
+
+.produto-mineiro h3::before{
+  color: #d7a54d;
+}
+
+.produto h3::before{
+  content: "";
+  display: block;
+  border-radius: 50%;
+  border: 5px solid #e7e4d8; 
+  width: 100px;
+  height: 100px;
+  margin: 60px auto 28px auto;
+  background: currentColor;
+  box-shadow: 0 0 0 5px currentColor; 
+}
+
+.produto .btn a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #252525;
+  text-transform: uppercase;
+  border: 3px solid #252525;
+  padding: 14px 25px;
+}
+
+.produto .btn{
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 739px){
+  .produto p{
+    padding-bottom: 10px;
+  }
+
+  .produto .btn{
+    margin-top: 60px;
+  }
+    
+}
+
+/* local */
+.local{
+  padding-top: 75px;
+}
+
+.local img{
+  max-width: 100%;
+}
+
+.local .endereco h4{
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.local .endereco p{
+  max-width: 320px;
+  padding-bottom: 30px;
+}
+
+.local .endereco{
+  padding-bottom: 70px;
+}
+
+.local .endereco a{
+  font-weight: bold;
+  color: #252525;
+  text-transform: uppercase;
+  border: solid #252525;
+  padding: 9px 25px;
+}
+
+.local .endereco{
+  margin-bottom: 65px;
+}
+
+@media only screen and (max-width:739px){
+  .local .endereco{
+    padding-bottom: 0px;
+  }
+
+  .local .endereco h4{
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  .local .endereco p{
+    max-width: 320px;
+    padding-bottom: 30px;
+  }
+}
+
+/* newsletter */
+.newsletter{
+  padding-top: 40px;
+  width: 100%;
+  background: #e7e4d8;
+}
+
+.newsletter h5{
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.newsletter p{
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+  padding-bottom: 42px;
+}
+
+.newsletter input {
+	border: 3px solid #252525;
+	background: none;
+	font-size: 1.7em;
+	font-style: italic;
+	font-family: Georgia, serif;
+} 
+
+.newsletter button {
+	background: #252525;
+	border: none;
+	font-family: Georgia, serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #fff;
+	cursor: pointer;
+} 
+
+@media only screen and (max-width:739px){
+  .newsletter p{
+    font-size: 22px;
+    font-style: italic;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  
+  .newsletter input {
+    border: 3px solid #252525;
+    background: none;
+    font-size: 1.2em;
+    font-style: italic;
+    font-family: Georgia, serif;
+    width: 191px;
+  } 
+
+  .newsletter button {
+    background: #252525;
+    border: none;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 65px;
+  }
+  
+}
+
+/* footer */
+.footer{
+  padding: 39px 0;
+  width: 100%;
+  background: #d6d3c8;
+
+}
+
+@media only screen and (max-width:739px){
+  .endereco_footer p{
+    padding-bottom: 10px;
+  }  
+}
